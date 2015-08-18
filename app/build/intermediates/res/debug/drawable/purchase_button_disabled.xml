@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <corners android:radius="5dp" />
+
+    <gradient android:angle="90"
+        android:centerColor="#cccccc"
+        android:endColor="#cccccc"
+        android:startColor="#b2b2b2" />
+</shape><!-- From: file:/home/andrea/Vinna/Games/frozenbubble_studio/app/src/main/res/drawable/purchase_button_disabled.xml -->

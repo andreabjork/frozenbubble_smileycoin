@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:weightSum="1"
+    android:id="@+id/product_layout"
+    android:gravity="center"
+    >
+
+
+    <TextView
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_name"
+        android:text="THIS IS A TEST"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFA"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="0.20" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:weightSum="1"
+        android:id="@+id/prod_info_layout"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_image"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#FFFFFA"
+            android:text="Here is some text for you about this product."
+            android:id="@+id/product_info"
+            android:paddingRight="50dp"
+            android:paddingLeft="10dp"/>
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_weight="0.1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFA"
+        android:text="Medium Text"
+        android:id="@+id/item_cost" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center"
+        android:id="@+id/product_button_panel"
+        android:tag="productViewLayout">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/decButton"
+            android:src="@drawable/minus"
+            android:clickable="true"
+            android:onClick="updateProductCounter"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="1"
+            android:id="@+id/editText"
+            android:layout_weight="0.20"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="0" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/incButton"
+            android:src="@drawable/plus"
+            android:clickable="true"
+            android:onClick="updateProductCounter"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Swipe right or left to view available products"
+        android:id="@+id/hintText"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffff00"
+        android:textSize="14sp"
+        android:layout_weight="0.20" />
+
+
+</LinearLayout><!-- From: file:/home/andrea/Vinna/Games/frozenbubble_studio/app/src/main/res/layout/product_view_layout.xml -->
