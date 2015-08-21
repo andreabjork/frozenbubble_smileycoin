@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:gravity="left"
+    >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/freezeImage"
+            android:src="@drawable/freeze_btn"
+            android:clickable="true"
+            android:onClick="useProduct"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/freezeImage"
+            android:layout_alignTop="@id/freezeImage"
+            android:layout_alignRight="@id/freezeImage"
+            android:layout_alignBottom="@id/freezeImage"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFA"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:text="Freeze 0"
+            android:id="@+id/product_label1"
+            android:clickable="false"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/dropImage"
+            android:src="@drawable/drop_btn"
+            android:clickable="true"
+            android:onClick="useProduct"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/dropImage"
+            android:layout_alignTop="@id/dropImage"
+            android:layout_alignRight="@id/dropImage"
+            android:layout_alignBottom="@id/dropImage"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFA"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Drop 0"
+            android:id="@+id/product_label2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/explodeImage"
+            android:src="@drawable/explode_btn"
+            android:clickable="true"
+            android:onClick="useProduct"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignLeft="@id/explodeImage"
+            android:layout_alignTop="@id/explodeImage"
+            android:layout_alignRight="@id/explodeImage"
+            android:layout_alignBottom="@id/explodeImage"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFA"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:text="Explode 0"
+            android:id="@+id/product_label3" />
+
+
+    </RelativeLayout>
+</LinearLayout>

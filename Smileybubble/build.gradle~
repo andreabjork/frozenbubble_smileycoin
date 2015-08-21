@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 10
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "org.jfedor.smileybubble"
+        minSdkVersion 10
+        targetSdkVersion 10
+
+        ndk {
+            moduleName "modplug-1.0"
+        }
+    }
+
+    sourceSets.main.jni.srcDirs = []
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:22.1.1'
+}
